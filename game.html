@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>بازی دوز | آن دوز</title>
+
+  <!-- اتصال فایل CSS -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <main class="game-container">
+
+    <!-- دکمه بازگشت -->
+    <button type="button" class="back-button" onclick="goBack()">
+      ← بازگشت
+    </button>
+
+    <!-- عنوان بازی -->
+    <h1>آن دوز</h1>
+    <p class="game-subtitle">بازی دوز ۳×۳</p>
+
+    <!-- امتیاز بازیکنان -->
+    <div class="score-board">
+
+      <div class="player-score">
+        بازیکن X:
+        <span id="scoreX">0</span>
+      </div>
+
+      <div class="player-score">
+        بازیکن O:
+        <span id="scoreO">0</span>
+      </div>
+
+    </div>
+
+    <!-- پیام وضعیت بازی -->
+    <h2 id="status">نوبت بازیکن X</h2>
+
+    <!-- صفحه بازی ۳×۳ -->
+    <div class="game-board" id="gameBoard">
+
+      <button type="button" class="cell" data-index="0" aria-label="خانه ۱"></button>
+      <button type="button" class="cell" data-index="1" aria-label="خانه ۲"></button>
+      <button type="button" class="cell" data-index="2" aria-label="خانه ۳"></button>
+
+      <button type="button" class="cell" data-index="3" aria-label="خانه ۴"></button>
+      <button type="button" class="cell" data-index="4" aria-label="خانه ۵"></button>
+      <button type="button" class="cell" data-index="5" aria-label="خانه ۶"></button>
+
+      <button type="button" class="cell" data-index="6" aria-label="خانه ۷"></button>
+      <button type="button" class="cell" data-index="7" aria-label="خانه ۸"></button>
+      <button type="button" class="cell" data-index="8" aria-label="خانه ۹"></button>
+
+    </div>
+
+    <!-- دکمه شروع دور جدید -->
+    <button
+      type="button"
+      id="restartButton"
+      class="restart-button"
+    >
+      شروع دور جدید
+    </button>
+
+  </main>
+
+  <!-- اتصال فایل‌های JavaScript -->
+  <script src="js/navigation.js"></script>
+  <script src="js/game.js"></script>
+
+</body>
+</html>
+

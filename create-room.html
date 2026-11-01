@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ساخت اتاق | آن دوز</title>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">آن دوز</div>
+
+        <nav class="navigation">
+            <a href="index.html">خانه</a>
+            <a href="guide.html">راهنمای بازی</a>
+        </nav>
+    </header>
+
+    <main class="main-container">
+
+        <section class="welcome-section">
+
+            <h1>ساخت اتاق بازی</h1>
+
+            <p>
+                برای ساخت اتاق یک اسم و در صورت نیاز یک رمز انتخاب کنید
+            </p>
+
+            <form id="create-room-form">
+
+                <label for="room-name">اسم اتاق</label>
+
+                <input
+                    type="text"
+                    id="room-name"
+                    name="roomName"
+                    placeholder="اسم اتاق"
+                    minlength="3"
+                    maxlength="30"
+                    required>
+
+                <label for="room-password">
+                    رمز اتاق (اختیاری)
+                </label>
+
+                <input
+                    type="password"
+                    id="room-password"
+                    name="roomPassword"
+                    placeholder="رمز اتاق (اختیاری)"
+                    maxlength="30">
+
+                <p
+                    id="room-message"
+                    class="message"
+                    aria-live="polite">
+                </p>
+
+                <button
+                    type="submit"
+                    class="primary-button">
+                    تأیید
+                </button>
+
+            </form>
+
+            <button
+                class="secondary-button"
+                type="button"
+                onclick="location.href='index.html'">
+                بازگشت
+            </button>
+
+        </section>
+
+        <section id="waiting-section" class="welcome-section" hidden>
+
+            <h2>اتاق ساخته شد!</h2>
+
+            <div class="waiting-box">
+                <h3>انتظار ...</h3>
+
+                <p>
+                    منتظر بمونید تا هم‌بازی شما وارد اتاق بشود
+                </p>
+
+                <p>
+                    اسم اتاق:
+                    <strong id="created-room-name"></strong>
+                </p>
+            </div>
+
+            <button
+                class="secondary-button"
+                type="button"
+                onclick="location.href='index.html'">
+                بازگشت به صفحهٔ اصلی
+            </button>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>©️ 2026 آن دوز</p>
+    </footer>
+
+    <script src="js/create-room.js"></script>
+
+<script src="js/navigation.js"></script>
+
+</body>
+</html>
+

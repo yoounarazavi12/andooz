@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>آن دوز | بازی آنلاین دوز</title>
+
+<link rel="stylesheet" href="css/main.css">
+</head>
+
+<script src="js/navigation.js"></script>
+
+<body>
+
+<!-- نوار بالای سایت -->
+<header class="header">
+<div class="logo">آن دوز</div>
+
+<nav class="navigation">
+<a href="index.html">خانه</a>
+<a href="guide.html">راهنمای بازی</a>
+</nav>
+</header>
+
+
+<!-- محتوای اصلی صفحه -->
+<main class="main-container">
+
+<!-- صفحه خوش‌آمدگویی -->
+<section id="welcome-section" class="welcome-section">
+
+<h1>سلام، خوش اومدی!</h1>
+
+<p>
+برای بازی کردن اول باید ثبت نام کنی
+</p>
+
+<button
+id="register-button"
+class="primary-button"
+type="button">
+ثبت نام
+</button>
+
+</section>
+
+
+<!-- فرم ثبت‌نام -->
+<section
+id="register-section"
+class="register-section"
+hidden>
+
+<h2>ثبت‌نام در آن دوز</h2>
+
+<p>
+یک اسم کاربری برای خودت انتخاب کن
+</p>
+
+<form id="register-form">
+
+<label for="username">
+اسم کاربری
+</label>
+
+<input
+type="text"
+id="username"
+name="username"
+placeholder="اسم کاربری دلخواه"
+minlength="3"
+maxlength="20"
+autocomplete="off"
+required>
+
+<p
+id="register-message"
+class="message"
+aria-live="polite">
+</p>
+
+<button
+type="submit"
+class="primary-button">
+تأیید ثبت‌نام
+</button>
+
+</form>
+
+</section>
+
+
+<!-- پنل کاربری -->
+ <div class="lobby-buttons">
+
+    <button
+        id="create-room-button"
+        class="primary-button"
+        type="button"
+        onclick="location.href='create-room.html'">
+        ساخت بازی
+    </button>
+
+    <button
+        id="join-room-button"
+        class="secondary-button"
+        type="button"
+        onclick="location.href='join-room.html'">
+        ورود به بازی
+    </button>
+
+    <a href="guide.html" class="guide-button">
+        راهنمایی بازی
+    </a>
+
+</div>
+<!-- پایین سایت -->
+<footer class="footer">
+<p>
+© 2026 آن دوز | بازی آنلاین دوز
+</p>
+</footer>
+
+
+<!-- فایل JavaScript جداگانه -->
+<script src="js/app.js"></script>
+
+</body>
+
+</html>11:37 PM
+<button class="back-button" onclick="goBack()">
+    ← بازگشت
+</button>
+

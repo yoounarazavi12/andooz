@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ورود به اتاق | آن دوز</title>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<script src="js/navigation.js"></script>
+
+<body>
+
+    <header class="header">
+        <div class="logo">آن دوز</div>
+
+        <nav class="navigation">
+            <a href="index.html">خانه</a>
+            <a href="guide.html">راهنمای بازی</a>
+        </nav>
+    </header>
+
+    <main class="main-container">
+
+        <section class="welcome-section" id="join-section">
+
+            <h1>ورود به اتاق بازی</h1>
+
+            <p>
+                اسم اتاق و در صورت نیاز رمز آن را وارد کنید
+            </p>
+
+            <form id="join-room-form">
+
+                <label for="join-room-name">اسم اتاق</label>
+
+                <input
+                    type="text"
+                    id="join-room-name"
+                    name="roomName"
+                    placeholder="اسم اتاق"
+                    minlength="3"
+                    maxlength="30"
+                    required>
+
+                <label for="join-room-password">
+                    رمز اتاق
+                </label>
+
+                <input
+                    type="password"
+                    id="join-room-password"
+                    name="roomPassword"
+                    placeholder="رمز اتاق (اگر دارد)"
+                    maxlength="30">
+
+                <p
+                    id="join-room-message"
+                    class="message"
+                    aria-live="polite">
+                </p>
+
+                <button
+                    type="submit"
+                    class="primary-button">
+                    تأیید
+                </button>
+
+            </form>
+
+            <button
+                class="secondary-button"
+                type="button"
+                onclick="location.href='index.html'">
+                بازگشت
+            </button>
+
+        </section>
+
+        <section class="welcome-section" id="joined-section" hidden>
+
+            <h2>ورود به اتاق انجام شد!</h2>
+
+            <p>
+                اسم اتاق:
+                <strong id="joined-room-name"></strong>
+            </p>
+
+            <p>
+                فعلاً این صفحه آزمایشی است؛ بازی آنلاین را در مرحلهٔ بعد می‌سازیم.
+            </p>
+
+            <button
+                class="primary-button"
+                type="button"
+                onclick="location.href='game.html'">
+                رفتن به بازی
+            </button>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>©️ 2026 آن دوز</p>
+    </footer>
+
+    <script src="js/join-room.js"></script>
+
+</body>
+</html>
+
