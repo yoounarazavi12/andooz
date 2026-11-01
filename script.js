@@ -38,7 +38,7 @@ document.getElementById(pageId).classList.add("active");
 function registerUser() {
 
 const usernameInput =
-document.getElementById("usernameInput");
+document.getElementById("username");
 
 const error =
 document.getElementById("registerError");
